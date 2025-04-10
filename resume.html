@@ -59,33 +59,31 @@
         header {
             display: flex;
             align-items: center;
-            margin-bottom: 15px;
+            margin-bottom: 20px;
             padding-bottom: 15px;
-            border-bottom: 1px solid #3498db;
         }
         
         .profile-pic {
             width: 130px;
             height: 130px;
             border-radius: 4px;
-            margin-right: 20px;
+            margin-right: 25px;
         }
         
         .header-text h1 {
             font-size: 26pt;
             font-weight: bold;
-            margin-bottom: 5px;
-            color: #2c3e50;
+            margin-bottom: 8px;
         }
         
         .header-text h2 {
             font-size: 16pt;
-            margin-bottom: 5px;
-            color: #3498db;
+            margin-bottom: 8px;
         }
         
         .header-subtitle {
-            font-size: 10pt;
+            font-size: 11pt;
+            line-height: 1.4;
         }
         
         /* Section styles */
@@ -149,25 +147,11 @@
         }
         
         /* Media styles */
-        .media-grid {
-            display: grid;
-            grid-template-columns: repeat(3, 1fr);
-            gap: 10px;
-        }
-        
-        .media-item {
-            border: 1px solid #ddd;
-            border-radius: 4px;
-            padding: 5px 8px;
-        }
-        
-        .media-name {
-            font-weight: bold;
-            font-style: italic;
-        }
-        
-        .media-details {
-            font-size: 9pt;
+        .media-links a, .media-links p {
+            display: block;
+            color: #3498db;
+            margin-bottom: 8px;
+            line-height: 1.6;
         }
         
         /* Gallery styles - will appear after page break */
@@ -319,19 +303,10 @@
         <!-- Media -->
         <section id="media">
             <h2 class="section-title">Media</h2>
-            <div class="media-grid">
-                <div class="media-item">
-                    <div class="media-name">Battlebots</div>
-                    <div class="media-details">Season WCVII</div>
-                </div>
-                <div class="media-item">
-                    <div class="media-name">Popular Mechanics</div>
-                    <div class="media-details">DIY Sailboat Feature</div>
-                </div>
-                <div class="media-item">
-                    <div class="media-name">National Geographic</div>
-                    <div class="media-details">"Breakthrough" Game of Drones</div>
-                </div>
+            <div class="media-links">
+                <a href="https://battlebots.com/robot/riptide-wcvii/">Battlebots Season WCVII</a>
+                <a href="https://www.popularmechanics.com/adventure/outdoors/a18930170/diy-sailboat/">Popular Mechanics</a>
+                <p>National Geographic: "Breakthrough" Game of Drones</p>
             </div>
         </section>
         
@@ -360,7 +335,7 @@
                     <p class="image-caption">A 3D Concrete Printing Robot</p>
                 </div>
                 <div class="gallery-item">
-                    <img src="image11.png" alt="Quiet Coffee Grinder" class="gallery-image" style="object-fit: contain; background-color: #f8f8f8; height: 200px;">
+                    <img src="image11.png" alt="Quiet Coffee Grinder" class="gallery-image" style="object-fit: contain; background-color: #f8f8f8; max-height: 250px;">
                     <p class="image-caption">Quiet Coffee Grinder</p>
                 </div>
                 <div class="gallery-item">

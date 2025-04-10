@@ -206,6 +206,7 @@
         .skill-category {
             flex: 1;
             min-width: 250px;
+            margin-bottom: 1.5rem;
         }
         
         .skill-category h3 {
@@ -213,8 +214,28 @@
             color: var(--secondary-color);
         }
         
-        .skill-list {
-            line-height: 1.8;
+        .skill-tags {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 0.5rem;
+        }
+        
+        .skill-tag {
+            background-color: white;
+            color: var(--secondary-color);
+            padding: 0.4rem 0.8rem;
+            border-radius: 20px;
+            font-size: 0.9rem;
+            display: inline-block;
+            margin-bottom: 0.5rem;
+            box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+            border: 1.5px solid var(--secondary-color);
+            transition: transform 0.2s ease, box-shadow 0.2s ease;
+        }
+        
+        .skill-tag:hover {
+            transform: translateY(-2px);
+            box-shadow: 0 3px 6px rgba(0,0,0,0.15);
         }
         
         footer {
@@ -320,23 +341,32 @@
             <div class="skills-container">
                 <div class="skill-category">
                     <h3>Hardware Skills</h3>
-                    <div class="skill-list">
-                        PCB Layout, Soldering, Electrical Wiring, Hardware Debugging, Bridgeport/Lathe work, Reverse Engineering with logic analyzers and a life long love of oscilloscopes
+                    <div class="skill-tags">
+                        <span class="skill-tag">PCB Layout</span>
+                        <span class="skill-tag">Soldering</span>
+                        <span class="skill-tag">Electrical Wiring</span>
+                        <span class="skill-tag">Hardware Debugging</span>
+                        <span class="skill-tag">Bridgeport/Lathe</span>
+                        <span class="skill-tag">Reverse Engineering</span>
+                        <span class="skill-tag">Logic Analyzers</span>
+                        <span class="skill-tag">Oscilloscopes</span>
                     </div>
                 </div>
                 <div class="skill-category">
                     <h3>Software Skills</h3>
-                    <div class="skill-list">
-                        Linux, NixOS, ROS, C, C++, Python, Javascript, NodeJS, Ardupilot/PX4, Geidra
+                    <div class="skill-tags">
+                        <span class="skill-tag">Linux</span>
+                        <span class="skill-tag">NixOS</span>
+                        <span class="skill-tag">ROS</span>
+                        <span class="skill-tag">C</span>
+                        <span class="skill-tag">C++</span>
+                        <span class="skill-tag">Python</span>
+                        <span class="skill-tag">Javascript</span>
+                        <span class="skill-tag">NodeJS</span>
+                        <span class="skill-tag">Ardupilot/PX4</span>
+                        <span class="skill-tag">Geidra</span>
                     </div>
                 </div>
-            </div>
-        </section>
-        
-        <section id="projects">
-            <h2 class="section-title">Personal Projects</h2>
-            <div class="project-list">
-                Portable Nintendo 64, Autonomous racing robot (Sparkfun AVC), Remote controlled Golf-cart, Text2Toast, 3DR Solo Airplane, Burrito-delivery Drone, Sim2Real Rover, Electric Sailboat, 13ft scratch-built wood boat, Electric Car Motor Controller, Golf Course vending machine robot, FOC Motor Controller, Car Bed for a Music Video, 1-Week scratch-built sailboat, Language Learning Browser, Chinese Pinyin Epub Viewer, Reverse engineering the Unitree Go1's motor protocol
             </div>
         </section>
         
@@ -350,7 +380,7 @@
                     <p class="image-caption">A 3D Concrete Printing Robot</p>
                 </div>
                 <div class="gallery-item">
-                    <img src="image11.png" alt="Quiet Coffee Grinder" class="gallery-image">
+                    <img src="image11.png" alt="Quiet Coffee Grinder" class="gallery-image" style="object-fit: contain; background-color: #f8f8f8;">
                     <p class="image-caption">Quiet Coffee Grinder</p>
                 </div>
                 <div class="gallery-item">

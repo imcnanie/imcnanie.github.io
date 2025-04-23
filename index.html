@@ -15,6 +15,26 @@
             --spacing-unit: 1rem;
         }
         
+        .gallery-button {
+            display: inline-block;
+            background-color: var(--secondary-color);
+            color: white;
+            font-weight: bold;
+            padding: 0.8rem 1.5rem;
+            border-radius: 30px;
+            text-decoration: none;
+            font-size: 1.1rem;
+            margin-bottom: 2rem;
+            box-shadow: 0 4px 8px rgba(0,0,0,0.15);
+            transition: transform 0.3s ease, background-color 0.3s ease, box-shadow 0.3s ease;
+        }
+        
+        .gallery-button:hover {
+            background-color: var(--primary-color);
+            transform: translateY(-3px);
+            box-shadow: 0 6px 12px rgba(0,0,0,0.2);
+        }
+        
         * {
             margin: 0;
             padding: 0;
@@ -164,6 +184,13 @@
             font-size: 1.1rem;
         }
         
+        .media-title {
+            color: var(--secondary-color);
+            font-weight: bold;
+            font-size: 1.1rem;
+            margin-bottom: 0.5rem;
+        }
+        
         .media-links a:hover {
             text-decoration: underline;
             color: var(--primary-color);
@@ -201,7 +228,7 @@
         }
         
         .media-content {
-            padding: 1.5rem;
+            padding: 1.5rem 2rem;
             display: flex;
             flex-direction: column;
             justify-content: center;
@@ -382,16 +409,30 @@
                 <!-- Added media-item container with image for BattleBots -->
                 <div class="media-item">
                     <img src="BB2022-riptide-team-1024x683.jpg" alt="BattleBots Riptide Team" class="media-image">
-                    <a href="https://battlebots.com/robot/riptide-wcvii/" target="_blank">Battlebots Season WCVII</a>
+                    <div class="media-content">
+                        <a href="https://battlebots.com/robot/riptide-wcvii/" target="_blank">Battlebots Season WCVII</a>
+                        <p>Featured as part of the Riptide robot team competing in BattleBots</p>
+                    </div>
                 </div>
                 
                 <!-- Added media-item container with image for Popular Mechanics -->
                 <div class="media-item">
                     <img src="pmx040118-electricsailboat2349-1521554123.jpg" alt="Electric Sailboat in Popular Mechanics" class="media-image">
-                    <a href="https://www.popularmechanics.com/adventure/outdoors/a18930170/diy-sailboat/" target="_blank">Popular Mechanics</a>
+                    <div class="media-content">
+                        <a href="https://www.popularmechanics.com/adventure/outdoors/a18930170/diy-sailboat/" target="_blank">Popular Mechanics</a>
+                        <p>Featured in article about DIY electric sailboat design and construction</p>
+                    </div>
                 </div>
                 
-                <p>National Geographic: "Breakthrough" Game of Drones</p>
+                <!-- Commented out National Geographic item
+                <div class="media-item">
+                    <img src="/api/placeholder/400/400" alt="National Geographic" class="media-image">
+                    <div class="media-content">
+                        <p class="media-title">National Geographic: "Breakthrough" Game of Drones</p>
+                        <p>Featured in National Geographic documentary series on drone technology</p>
+                    </div>
+                </div>
+                -->
             </div>
         </section>
         
@@ -431,7 +472,9 @@
         
         <section id="gallery">
             <h2 class="section-title">Photos & Videos</h2>
-            <p><a href="https://photos.app.goo.gl/p5gVsMS7zKkhY4K68" target="_blank">Full Photo Gallery</a></p>
+            <a href="https://photos.app.goo.gl/p5gVsMS7zKkhY4K68" target="_blank" class="gallery-button">
+                🎬 More videos here!
+            </a>
             
             <div class="image-gallery">
                 <div class="gallery-item">

@@ -166,6 +166,35 @@
             text-decoration: underline;
         }
         
+        .media-item {
+            margin-bottom: 2rem;
+            display: flex;
+            flex-direction: column;
+        }
+        
+        @media (min-width: 768px) {
+            .media-item {
+                flex-direction: row;
+                align-items: center;
+            }
+        }
+        
+        .media-image {
+            width: 100%;
+            max-width: 300px;
+            height: auto;
+            border-radius: 8px;
+            box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+            margin-bottom: 1rem;
+        }
+        
+        @media (min-width: 768px) {
+            .media-image {
+                margin-right: 1.5rem;
+                margin-bottom: 0;
+            }
+        }
+        
         .image-gallery {
             display: grid;
             grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
@@ -330,8 +359,18 @@
         <section id="media">
             <h2 class="section-title">Media</h2>
             <div class="media-links">
-                <a href="https://battlebots.com/robot/riptide-wcvii/" target="_blank">Battlebots Season WCVII</a>
-                <a href="https://www.popularmechanics.com/adventure/outdoors/a18930170/diy-sailboat/" target="_blank">Popular Mechanics</a>
+                <!-- Added media-item container with image for BattleBots -->
+                <div class="media-item">
+                    <img src="BB2022-riptide-team-1024x683.jpg" alt="BattleBots Riptide Team" class="media-image">
+                    <a href="https://battlebots.com/robot/riptide-wcvii/" target="_blank">Battlebots Season WCVII</a>
+                </div>
+                
+                <!-- Added media-item container with image for Popular Mechanics -->
+                <div class="media-item">
+                    <img src="pmx040118-electricsailboat2349-1521554123.jpg" alt="Electric Sailboat in Popular Mechanics" class="media-image">
+                    <a href="https://www.popularmechanics.com/adventure/outdoors/a18930170/diy-sailboat/" target="_blank">Popular Mechanics</a>
+                </div>
+                
                 <p>National Geographic: "Breakthrough" Game of Drones</p>
             </div>
         </section>
